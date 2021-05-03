@@ -1,0 +1,163 @@
+<!DOCUMENT html>
+<html lang="pl">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="section">
+        <div id="back">
+            <a id="undo" href="menu_service.html">&lt;</a>
+        </div>
+        <div id="menu">
+            <div id="service_tab">
+                <div id="tabela_s">
+                    <table id="t_s">
+                        <caption>Serwis smartfonów</caption>
+                        <tr class="header">
+                            <th></th>
+                            <th>Id</th>
+                            <th>Nazwa</th>
+                            <th>Cena</th>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s1" value="150" /> </th>
+                            <td>1</td>
+                            <th id="s_s1"></th>
+                            <td>150 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s2" value="150" /> </th>
+                            <td>2</td>
+                            <th id="s_s2"></th>
+                            <td>150 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s3" value="80" /> </th>
+                            <td>3</td>
+                            <th id="s_s3"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s4" value="50" /> </th>
+                            <td>4</td>
+                            <th id="s_s4"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s5" value="50" /> </th>
+                            <td>5</td>
+                            <th id="s_s5"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s6" value="50" /> </th>
+                            <td>6</td>
+                            <th id="s_s6"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s7" value="50" /> </th>
+                            <td>7</td>
+                            <th id="s_s7"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s8" value="80" /> </th>
+                            <td>8</td>
+                            <th id="s_s8"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s9" value="100" /> </th>
+                            <td>9</td>
+                            <th id="s_s9"></th>
+                            <td>100 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s10" value="80" /> </th>
+                            <td>10</td>
+                            <th id="s_s10"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s11" value="50" /> </th>
+                            <td>11</td>
+                            <th id="s_s11"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s12" value="50" /> </th>
+                            <td>12</td>
+                            <th id="s_s12"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s13" value="50" /> </th>
+                            <td>13</td>
+                            <th id="s_s13"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b3">
+                            <th> <input type="checkbox" id="ch_s14" value="50" /> </th>
+                            <td>14</td>
+                            <th id="s_s14"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="service">
+                <!-- <div id="service_k"></div> -->
+                <!--<div id="service_n"></div> -->
+                <!-- <div id="service_s"></div> -->
+            </div>
+        </div>
+        <!-- <div style="clear: both;"></div> -->
+        <div id="pricing">
+            <div id="pricing_label">
+                <div id="box-service">
+                    <input type="text" id="d1" name="d1" required/>
+                    <span>Kod rabatowy</span>
+                </div>
+                <input type="submit" value="Wylicz" onclick="wylicz_serwis_s()" />
+            </div>
+            <fieldset>
+                <h2>Wycena</h2>
+                <div id="discount"></div>
+                <!-- <div id="dojazd"></div> -->
+                <div id="sum_s"></div>
+                <div id="cash_s"></div>
+                <div id="m1"></div>
+
+            </fieldset>
+
+        </div>
+    </div>
+
+    <video id="bg" autoplay="autoplay" loop="loop">
+        <source src="video/tlo2.mp4" type="video/mp4" />
+    </video>
+    <script src="script_s.js"></script>
+</body>
+
+</html>

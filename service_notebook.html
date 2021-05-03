@@ -1,0 +1,164 @@
+<!DOCUMENT html>
+<html lang="pl">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="section">
+        <div id="back">
+            <a id="undo" href="menu_service.html">&lt;</a>
+        </div>
+        <div id="menu">
+            <div id="service_tab">
+                <div id="tabela_n">
+                    <table id="t_n">
+                        <caption>Serwis notebooków</caption>
+                        <tr class="header">
+                            <th></th>
+                            <th>Id</th>
+                            <th>Nazwa</th>
+                            <th>Cena</th>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n1" value="120" /> </th>
+                            <td>1</td>
+                            <th id="s_n1"></th>
+                            <td>120 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n2" value="50" /> </th>
+                            <td>2</td>
+                            <th id="s_n2"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n3" value="50" /> </th>
+                            <td>3</td>
+                            <th id="s_n3"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n4" value="50" /> </th>
+                            <td>4</td>
+                            <th id="s_n4"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n5" value="50" /> </th>
+                            <td>5</td>
+                            <th id="s_n5"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n6" value="20" /> </th>
+                            <td>6</td>
+                            <th id="s_n6"></th>
+                            <td>20 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n7" value="30" /> </th>
+                            <td>7</td>
+                            <th id="s_n7"></th>
+                            <td>30 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n8" value="80" /> </th>
+                            <td>8</td>
+                            <th id="s_n8"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n9" value="80" /> </th>
+                            <td>9</td>
+                            <th id="s_n9"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n10" value="50" /> </th>
+                            <td>10</td>
+                            <th id="s_n10"></th>
+                            <td>50 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n11" value="80" /> </th>
+                            <td>11</td>
+                            <th id="s_n11"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n12" value="80" /> </th>
+                            <td>12</td>
+                            <th id="s_n12"></th>
+                            <td>80 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n13" value="30" /> </th>
+                            <td>13</td>
+                            <th id="s_n13"></th>
+                            <td>30 zł</td>
+                        </tr>
+
+                        <tr class="b2">
+                            <th> <input type="checkbox" id="ch_n14" value="50" /> </th>
+                            <td>14</td>
+                            <th id="s_n14"></th>
+                            <td>50 zł</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="service">
+                <!-- <div id="service_k"></div> -->
+                <!-- <div id="service_n"></div> -->
+                <!-- <div id="service_s"></div> -->
+            </div>
+        </div>
+        <!-- <div style="clear: both;"></div> -->
+        <div id="pricing">
+            <div id="pricing_label">
+                <div id="box-service">
+                    <input type="text" id="d1" name="d1" required/>
+                    <span>Kod rabatowy</span>
+                </div>
+                <input type="submit" value="Wylicz" onclick="wylicz_serwis_n()" />
+            </div>
+            <fieldset>
+                <h2>Wycena</h2>
+                <div id="discount"></div>
+                <!-- <div id="dojazd"></div> -->
+                <div id="sum_n"></div>
+                <div id="cash_n"></div>
+                <div id="m1"></div>
+                <div id="service_k"></div>
+
+            </fieldset>
+
+        </div>
+    </div>
+
+    <video id="bg" autoplay="autoplay" loop="loop">
+        <source src="video/tlo2.mp4" type="video/mp4" />
+    </video>
+    <script src="script_n.js"></script>
+    <script src="script_k.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCUMENT html>
+<html lang="pl">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>Wybierz usługę</h1>
+    <!-- <div id="song">
+        <input type="submit" id="play" value="On" onclick="muzyka_On()" />
+        <input type="submit" id="stop" value="Off" onclick="muzyka_Off()" />
+
+    </div> -->
+    <div id="section">
+        <div id="tabela_k">
+
+            <table id="t_k">
+                <caption>Serwis komputerów PC</caption>
+                <tr class="header">
+                    <th></th>
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k1" value="120" /> </th>
+                    <td>1</td>
+                    <th id="s_k1"></th>
+                    <td>120 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k2" value="50" /> </th>
+                    <td>2</td>
+                    <th id="s_k2"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k3" value="80" /> </th>
+                    <td>3</td>
+                    <th id="s_k3"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k4" value="50" /> </th>
+                    <td>4</td>
+                    <th id="s_k4"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k5" value="20" /> </th>
+                    <td>5</td>
+                    <th id="s_k5"></th>
+                    <td>20 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k6" value="30" /> </th>
+                    <td>6</td>
+                    <th id="s_k6"></th>
+                    <td>30 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k7" value="30" /> </th>
+                    <td>7</td>
+                    <th id="s_k7"></th>
+                    <td>30 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k8" value="30" /> </th>
+                    <td>8</td>
+                    <th id="s_k8"></th>
+                    <td>30 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k9" value="10" /> </th>
+                    <td>9</td>
+                    <th id="s_k9"></th>
+                    <td>10 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k10" value="50" /> </th>
+                    <td>10</td>
+                    <th id="s_k10"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b1">
+                    <th> <input type="checkbox" id="ch_k11" value="120" /> </th>
+                    <td>11</td>
+                    <th id="s_k11"></th>
+                    <td>120 zł</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="tabela_n">
+            <table id="t_n">
+                <caption>Serwis notebooków</caption>
+                <tr class="header">
+                    <th></th>
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n1" value="120" /> </th>
+                    <td>1</td>
+                    <th id="s_n1"></th>
+                    <td>120 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n2" value="50" /> </th>
+                    <td>2</td>
+                    <th id="s_n2"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n3" value="50" /> </th>
+                    <td>3</td>
+                    <th id="s_n3"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n4" value="50" /> </th>
+                    <td>4</td>
+                    <th id="s_n4"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n5" value="50" /> </th>
+                    <td>5</td>
+                    <th id="s_n5"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n6" value="20" /> </th>
+                    <td>6</td>
+                    <th id="s_n6"></th>
+                    <td>20 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n7" value="30" /> </th>
+                    <td>7</td>
+                    <th id="s_n7"></th>
+                    <td>30 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n8" value="80" /> </th>
+                    <td>8</td>
+                    <th id="s_n8"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n9" value="80" /> </th>
+                    <td>9</td>
+                    <th id="s_n9"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n10" value="50" /> </th>
+                    <td>10</td>
+                    <th id="s_n10"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n11" value="80" /> </th>
+                    <td>11</td>
+                    <th id="s_n11"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n12" value="80" /> </th>
+                    <td>12</td>
+                    <th id="s_n12"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n13" value="30" /> </th>
+                    <td>13</td>
+                    <th id="s_n13"></th>
+                    <td>30 zł</td>
+                </tr>
+
+                <tr class="b2">
+                    <th> <input type="checkbox" id="ch_n14" value="50" /> </th>
+                    <td>14</td>
+                    <th id="s_n14"></th>
+                    <td>50 zł</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="tabela_s">
+            <table id="t_s">
+                <caption>Serwis smartfonów</caption>
+                <tr class="header">
+                    <th></th>
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s1" value="150" /> </th>
+                    <td>1</td>
+                    <th id="s_s1"></th>
+                    <td>150 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s2" value="150" /> </th>
+                    <td>2</td>
+                    <th id="s_s2"></th>
+                    <td>150 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s3" value="80" /> </th>
+                    <td>3</td>
+                    <th id="s_s3"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s4" value="50" /> </th>
+                    <td>4</td>
+                    <th id="s_s4"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s5" value="50" /> </th>
+                    <td>5</td>
+                    <th id="s_s5"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s6" value="50" /> </th>
+                    <td>6</td>
+                    <th id="s_s6"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s7" value="50" /> </th>
+                    <td>7</td>
+                    <th id="s_s7"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s8" value="80" /> </th>
+                    <td>8</td>
+                    <th id="s_s8"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s9" value="100" /> </th>
+                    <td>9</td>
+                    <th id="s_s9"></th>
+                    <td>100 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s10" value="80" /> </th>
+                    <td>10</td>
+                    <th id="s_s10"></th>
+                    <td>80 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s11" value="50" /> </th>
+                    <td>11</td>
+                    <th id="s_s11"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s12" value="50" /> </th>
+                    <td>12</td>
+                    <th id="s_s12"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s13" value="50" /> </th>
+                    <td>13</td>
+                    <th id="s_s13"></th>
+                    <td>50 zł</td>
+                </tr>
+
+                <tr class="b3">
+                    <th> <input type="checkbox" id="ch_s14" value="50" /> </th>
+                    <td>14</td>
+                    <th id="s_s14"></th>
+                    <td>50 zł</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+    <!-- <div style="clear: both;"></div> -->
+    <div id="wycena">
+        <caption>Rabat: </caption>
+        <input type="text" id="r1" value="0" /><br>
+
+        <caption>Dojazd: </caption>
+        <input type="text" id="d1" value="0" /> km<br>
+
+        <input type="submit" value="Wylicz" onclick="wylicz_serwis()" />
+
+        <fieldset>
+            <legend>
+                <h2>Wycena</h2>
+            </legend>
+
+            <div id="rabat"></div>
+            <div id="dojazd"></div>
+            <div id="suma_all"></div>
+            <div id="cash"></div>
+            <div id="m1"></div>
+    </div>
+
+
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+
+</html>
