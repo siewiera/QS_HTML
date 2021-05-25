@@ -121,6 +121,24 @@ body::after {
     background-image: url("image/1.png");
     width: 170px;
     height: 80px;
+    filter: drop-shadow(0px 0px 1px #0cff04);
+    animation: animation 2s infinite;
+    /* animation-duration: 4s; */
+}
+
+@keyframes animation {
+    0% {
+        filter: drop-shadow(0px 0px 1px #0cff04);
+    }
+    25% {
+        filter: drop-shadow(0px 0px 1px #0cff0400);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 1px #ff0404);
+    }
+    75% {
+        filter: drop-shadow(0px 0px 1px #0cff0400);
+    }
 }
 
 #header #content {
@@ -192,11 +210,69 @@ body::after {
     background: rgb(199 199 199 / 28%);
     transition: 0.5s;
     cursor: pointer;
+    animation: animation2 2s infinite;
+}
+
+@keyframes animation2 {
+    0% {
+        border: 1px solid #0cff04;
+    }
+    25% {
+        border: 1px solid #0cff0400;
+    }
+    50% {
+        border: 1px solid #ff0404;
+    }
+    75% {
+        border: 1px solid #0cff0400;
+    }
 }
 
 #header #menu ul li a {
     color: white;
     text-decoration: none;
+}
+
+.menu_item .item {
+    display: none;
+}
+
+.item h2 {
+    text-transform: uppercase;
+    color: #FF9800;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+.item p {
+    padding: 20px;
+}
+
+.active {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.active .item {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    width: 512px;
+    height: 335px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000de;
+    backdrop-filter: blur(5px);
+    left: 28%;
+}
+
+.active:hover .item h2 {
+    filter: drop-shadow(0 0px 10px #FF9800);
+    transition: filter 1s ease-in-out;
 }
 
 #footer {

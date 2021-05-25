@@ -26,43 +26,45 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a href="">Intro</a></li>
-                    <li><a href="">O nas</a></li>
+                    <li class="menu_item">Intro
+                        <div class="item">
+                            <h2>Quick Serwis</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore soluta, quidem ipsa voluptatem quis error vero doloribus laborum atque earum exercitationem animi dolorem et ea quia nostrum illum nemo.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu_item">O nas
+                        <div class="item">
+                            <h2>O nas</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore soluta, quidem ipsa voluptatem quis error vero doloribus laborum atque earum exercitationem animi dolorem et ea quia nostrum illum nemo.
+                            </p>
+                        </div>
+                    </li>
                     <li><a href="menu_service.html">Wycena</a></li>
                     <li><a href="contact.php">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
-        <!-- <div id="main">
-
-        <article id="intro">
-            <h2 id="major">Intro</h2>
-            <p>Aenean ornare erat id euismod egestas. <a href="#work">awesome work</a>.</p>
-        </article>
-
-      
-        <article id="o_nas">
-            <h2 id="major">O nas</h2>
-            <p>Adipisasdasdasdasdfvsaqwrtyujhgbvzxcqwweqwtus ultrices.</p>
-        </article>
-
-       
-        <article id="wycena">
-            <h2 id="major">Wycena</h2>
-            <p>Adipisasdasdasdasdfvsaqwrtyujhgbvzxcqwweqwtus ultrices.</p>
-        </article>
-
-        
-        <article id="kontakt">
-            <h2 id="major">Kontakt</h2>
-            <p>Adipisasdasdasdasdfvsaqwrtyujhgbvzxcqwweqwtus ultrices.</p>
-        </article>
-    </div> -->
         <footer id="footer">
             <p id="info">© Quick Serwis</p>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $('.menu_item').on('click', function(event) {
+            event.preventDefault();
+            $('.menu_item').removeClass('active');
+            $(this).addClass('active');
+        });
 
+        $('.menu_item').on('dblclick', function(event) {
+            event.preventDefault();
+            $('.menu_item').removeClass('active');
+            // $(this).addClass('active');
+        });
+    </script>
     <video id="bg" autoplay="autoplay" loop="loop">
         <!-- <source src="video/tlo2.webm" type="video/webm" /> -->
         <source src="video/tlo2.mp4" type="video/mp4" />
